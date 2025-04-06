@@ -71,7 +71,7 @@ def calcular_resultados(RMR89, D, sci, model=None):
     plt.legend()
     plt.show()
 
-# Generación de datos ficticios para entrenamiento del modelo
+# Generación de datos para entrenamiento del modelo
 np.random.seed(42)
 n_samples = 1000
 RMR89_data = np.random.uniform(25, 85, n_samples)
@@ -115,7 +115,7 @@ display(Markdown(f"""
 - **Error Absoluto Medio (MAE):** `{mae:.2f}`
 """))
 
-# Mostrar las gráficas por separado
+# Mostrar gráficas
 # 1. Gráfico de Predicción vs Real
 plt.figure(figsize=(10, 6))
 plt.scatter(y_test, y_pred, color='blue', alpha=0.5)
